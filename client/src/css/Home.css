@@ -1,0 +1,33 @@
+.home{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    padding-right:30px
+}
+.home-content{
+}
+.home-header{
+    color: #13544c;
+    font-size: 10vw;
+    margin-bottom: 20px;
+
+}
+.home-title-large{
+    font-size: 5vw;
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-title-small{
+    font-size: 1.5vw;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-logo{
+    width: 30%;
+    height: 40%;
+}

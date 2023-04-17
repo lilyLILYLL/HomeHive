@@ -1,5 +1,5 @@
 
-.header{
+.headbar{
     background-color: #13544C;
     width: 100vw;
     height: 30px;
@@ -8,18 +8,18 @@
     
 
 }
-.header-logo{
+.headbar-logo{
     width:50px;
     height:100%;
 
 }
-.header-content{
+.headbar-content{
     display: flex;
     align-items: center;
     flex:1;
     flex-wrap: wrap;
 }
-.header-link >div{
+.headbar-link >div{
     height:100%;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
     padding-right: 10px;
 }
 
-.header-link{
+.headbar-link{
     font-size: 10px;
     color: white;
     text-decoration: none;font-family: 'Inter var',sans-serif;;

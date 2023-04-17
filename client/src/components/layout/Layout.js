@@ -1,6 +1,6 @@
 import "../../css/Layout.css";
 import React from "react";
-import { Header } from "./Header";
+import { HeadBar } from "./HeadBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import routes from "../../constants/routes";
 export const Layout = () => {
@@ -8,7 +8,7 @@ export const Layout = () => {
         <BrowserRouter>
             <div className="layout">
                 <div className="layout-header">
-                    <Header />
+                    <HeadBar />
                 </div>
                 <div className="layout-content">
                     <Routes>
