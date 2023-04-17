@@ -1,4 +1,4 @@
-import "../../css/Header.css";
+import "../../scss/Header.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import routes from "../../constants/routes";

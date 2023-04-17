@@ -1,3 +1,5 @@
+@use 'base';
+
 .layout{
 
   flex:1;
@@ -5,7 +7,7 @@
     grid-template-areas: "header"
                           "content";
 
-    background-color: #EFE8D8;
+    background-color:base.$backgroundColor;
     min-height: 100vh;
  
 }

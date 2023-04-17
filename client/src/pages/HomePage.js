@@ -1,4 +1,4 @@
-import "../../src/css/Home.css";
+import "../../src/scss/Home.scss";
 import React from "react";
 import homeLogo from "../assets/homeLogo.png";
 export const HomePage = () => {

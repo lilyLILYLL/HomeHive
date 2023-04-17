@@ -1,15 +1,17 @@
+@use 'base';
 .home{
     padding-left: 40px;
     display: flex;
     flex-direction: row;
-    padding-right:30px
+    padding-right:30px;
+    align-items: center;
 }
-.home-content{
-}
+
 .home-header{
-    color: #13544c;
+    color: base.$darkBlue;
     font-size: 10vw;
     margin-bottom: 20px;
+    font-family: base.$font-family-header;
 
 }
 .home-title-large{
@@ -19,15 +21,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: base.$font-family-header
+    
 }
 .home-title-small{
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: base.$font-family-header-text;
 }
 .home-logo{
-    width: 30%;
-    height: 40%;
+    width: 35%;
+    height: 50%;
 }

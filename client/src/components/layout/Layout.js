@@ -1,4 +1,4 @@
-import "../../css/Layout.css";
+import "../../scss/Layout.scss";
 import React from "react";
 import { HeadBar } from "./HeadBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
