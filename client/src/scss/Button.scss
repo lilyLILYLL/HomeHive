@@ -1,0 +1,16 @@
+@use 'base';
+.button{
+    background-color: base.$darkBlue;
+    font-size: 2vw;
+    color: base.$white;
+    font-family: base.$font-family-header-text;
+    width: 15vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5vw;
+}
+.button:hover{
+    cursor: pointer;
+}

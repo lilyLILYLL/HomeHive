@@ -31,8 +31,16 @@
     flex-direction: row;
     justify-content: space-between;
     font-family: base.$font-family-header-text;
+    margin-bottom: 6vw;
 }
 .home-logo{
     width: 35%;
     height: 50%;
+}
+.home-button{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    
 }
