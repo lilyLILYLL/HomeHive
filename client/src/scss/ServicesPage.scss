@@ -1,0 +1,72 @@
+@use 'base';
+.service-page{
+display: flex;
+flex-direction: column;
+margin-top: 0;
+flex:1;
+}
+.seperator-line{
+    height: 0.5px;
+    background-color: base.$black;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    column-gap:20px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:40px;
+    padding-bottom: 40px;
+    
+}
+
+.service-image{
+   width:30%;
+   height: 100%;
+  
+    
+}
+.service-content{
+    display: flex;
+    flex-direction: column;
+    font-family:base.$font-family;
+    justify-content: space-between;
+    width:60%;
+    height:150px;
+    
+
+}
+.service-name{
+    font-size:1rem;
+}
+.service-description{
+    font-size: 0.7rem;
+    height:50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.service-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: base.$darkBlue;
+    font-size: 0.7rem;
+    padding:10px;
+    width: 25%;
+    max-width: 100px;
+    margin-left: 25%;
+    margin-top:20px;
+    color: base.$white;
+    border-radius: 20px;
+}
+.service-button:hover{
+    cursor: pointer;
+}

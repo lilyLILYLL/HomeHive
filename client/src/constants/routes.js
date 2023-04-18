@@ -16,6 +16,11 @@ export default [
         label: "About Us",
     },
     {
+        path: "/services",
+        element: <ServicesPage />,
+        label: "Services",
+    },
+    {
         path: "/contact",
         element: <ContactPage />,
         label: "Contact",
@@ -24,10 +29,5 @@ export default [
         path: "/partnership",
         element: <PartnershipPage />,
         label: "Partnership",
-    },
-    {
-        path: "/services",
-        element: <ServicesPage />,
-        label: "Services",
     },
 ];

@@ -8,7 +8,7 @@
                           "content";
 
     background-color:base.$backgroundColor;
-    min-height: 100vh;
+    grid-template: 30px 1fr/1fr;
  
 }
 .layout-header{
@@ -17,4 +17,6 @@
 }
 .layout-content{
     grid-area: "content";
+    min-height: 100vh;
+    
 }

@@ -5,17 +5,18 @@
     flex-direction: row;
     padding-right:30px;
     align-items: center;
+    height: 100vh;
 }
 
 .home-header{
     color: base.$darkBlue;
-    font-size: 10vw;
+    font-size: 8vw;
     margin-bottom: 20px;
     font-family: base.$font-family-header;
 
 }
 .home-title-large{
-    font-size: 5vw;
+    font-size: 4vw;
     width: 90%;
     margin-bottom: 20px;
     display: flex;
@@ -25,7 +26,7 @@
     
 }
 .home-title-small{
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -36,6 +37,7 @@
 .home-logo{
     width: 35%;
     height: 50%;
+    
 }
 .home-button{
     display: flex;
