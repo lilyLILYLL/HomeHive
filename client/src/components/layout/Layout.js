@@ -18,6 +18,7 @@ export const Layout = () => {
                                 <Route
                                     path={route.path}
                                     element={route.element}
+                                    key={index}
                                 />
                             );
                         })}

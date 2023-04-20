@@ -1,9 +1,9 @@
 @use 'base';
 .service-page{
-display: flex;
-flex-direction: column;
-margin-top: 0;
-flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    flex:1;
 }
 .seperator-line{
     height: 0.5px;
@@ -13,60 +13,85 @@ flex:1;
 .service{
     display: flex;
     flex-direction: row;
-    height: fit-content;
-    column-gap:20px;
-    align-items: center;
-    padding-left: 20px;
-    padding-right:20px;
-    padding-top:40px;
-    padding-bottom: 40px;
+    column-gap:5%;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
     
 }
+.reverse{
+    flex-direction: row-reverse;
+}
+
 
 .service-image{
-   width:30%;
+   width:50%;
    height: 100%;
-  
+   min-height: 150px;
+   min-width: 245px; // the minimum width is 286 
+   align-self: center;
     
 }
 .service-content{
+    font-family:base.$font-family;
     display: flex;
     flex-direction: column;
-    font-family:base.$font-family;
     justify-content: space-between;
-    width:60%;
-    height:150px;
+    width: 50%;
+
     
 
 }
 .service-name{
     font-size:1rem;
+    margin-bottom: 10px;
 }
 .service-description{
-    font-size: 0.7rem;
-    height:50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+    font-size: 0.6rem;
+    word-spacing: 2px;
+    line-height: 15px;
+
+    margin-bottom: 20px;
+   
 }
 .service-button{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
     background-color: base.$darkBlue;
     font-size: 0.7rem;
     padding:10px;
-    width: 25%;
     max-width: 100px;
-    margin-left: 25%;
-    margin-top:20px;
+    width:25%;
     color: base.$white;
     border-radius: 20px;
+    min-width: 70px;
+    align-self: center;
 }
 .service-button:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .service{
+        flex-direction: column;
+       
+       align-items: center;
+       margin-left:0;margin-right: 0;
+    }
+    .service-content{
+        width: 80%;
+        margin-top:10px;
+    }
+    .service-image{
+        width: 80%;
+        
+    }
+    .service-content{
+        height: 50%;
+    }
+  
+    
 }
