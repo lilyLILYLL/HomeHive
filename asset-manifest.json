@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/HomeHive/static/css/main.73bc5940.css",
+    "main.js": "/HomeHive/static/js/main.c714fd88.js",
+    "static/media/homeLogo.png": "/HomeHive/static/media/homeLogo.88235e7951b467b42dd0.png",
+    "static/media/lawn_maintenance.jpeg": "/HomeHive/static/media/lawn_maintenance.f48db211e157f5e87fa2.jpeg",
+    "static/media/pest.jpeg": "/HomeHive/static/media/pest.e01db45c6e35d4df3bcf.jpeg",
+    "static/media/handyman.jpeg": "/HomeHive/static/media/handyman.d22e10682bb270955c9b.jpeg",
+    "static/media/Fence.jpeg": "/HomeHive/static/media/Fence.81f931dcc455ffb8b981.jpeg",
+    "static/media/wallpainter.jpeg": "/HomeHive/static/media/wallpainter.e703a8bc935dcbe1eb23.jpeg",
+    "static/media/AC.jpeg": "/HomeHive/static/media/AC.157a5e5147536e10549d.jpeg",
+    "static/media/logo.svg": "/HomeHive/static/media/logo.ce123efd0a9230e4e474f5eb87abc607.svg",
+    "index.html": "/HomeHive/index.html",
+    "main.73bc5940.css.map": "/HomeHive/static/css/main.73bc5940.css.map",
+    "main.c714fd88.js.map": "/HomeHive/static/js/main.c714fd88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73bc5940.css",
+    "static/js/main.c714fd88.js"
+  ]
+}
