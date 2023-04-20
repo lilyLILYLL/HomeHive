@@ -6,26 +6,29 @@ import "../src/scss/index.scss";
 import {
     BrowserRouter,
     createBrowserRouter,
+    createHashRouter,
     RouterProvider,
 } from "react-router-dom";
 
 import routes from "./constants/routes";
-export const router = createBrowserRouter([
+
+const isProduction = process.env.NODE_ENV === "production";
+
+export const router = createHashRouter([
     {
-        path: "",
+        path: "/",
         element: <App />,
         children: routes,
     },
+    {
+        basename: isProduction ? "/HomeHive" : "/",
+    },
 ]);
 
+console.log(isProduction);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <React.StrictMode>
-        <RouterProvider router={router}>
-            <App />
-        </RouterProvider>
-    </React.StrictMode>
-);
+root.render(<RouterProvider router={router} />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
