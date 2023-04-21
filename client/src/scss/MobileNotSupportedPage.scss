@@ -1,0 +1,11 @@
+@use 'base';
+.not-supported{
+    font-size: 30px;
+    background-color: base.$backgroundColor;
+    height: 100vh;
+    font-family: base.$font-family-header;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
