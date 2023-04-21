@@ -2,15 +2,18 @@
 .headbar{
     background-color: base.$darkBlue;
     width: 100vw;
-    height: 30px;
+    height: 70px;
     display: flex;
     position: fixed;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     
 
 }
 .headbar-logo{
-    width:50px;
+    width:100px;
     height:100%;
+    margin-left:10px;
+    margin-right:10px;
 
 }
 .headbar-content{
@@ -23,7 +26,7 @@
 
 .headbar-link{
     height:100%;
-    font-size: 10px;
+    font-size: 20px;
     color: base.$white;
     text-decoration: none;
     font-family: base.$font-family;

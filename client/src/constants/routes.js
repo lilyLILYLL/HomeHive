@@ -11,15 +11,16 @@ export default [
         label: "Home",
     },
     {
-        path: "/aboutUs",
-        element: <AboutUsPage />,
-        label: "About Us",
-    },
-    {
         path: "/services",
         element: <ServicesPage />,
         label: "Services",
     },
+    {
+        path: "/aboutUs",
+        element: <AboutUsPage />,
+        label: "About Us",
+    },
+
     {
         path: "/contact",
         element: <ContactPage />,

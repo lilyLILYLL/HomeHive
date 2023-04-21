@@ -7,7 +7,9 @@ import colors from "../../constants/colors";
 export const HeadBar = () => {
     return (
         <div className="headbar">
-            <img alt="Logo" src={logo} className="headbar-logo" />
+            <NavLink to="/">
+                <img alt="Logo" src={logo} className="headbar-logo" />
+            </NavLink>
 
             {routes &&
                 routes.map((route, index) => {
