@@ -5,7 +5,7 @@ package main.java.com.HomeHiveBackend.model;
 @Setter
 @NoArgsConstructor
 @ToString
-@Table(name = "client")
+@Table(name = "clients")
 public class Client {
 
     @Id
