@@ -1,31 +1,29 @@
-@use 'base';
-.home{
+@use "base";
+.home {
     padding-left: 40px;
     display: flex;
     flex-direction: row;
-    padding-right:30px;
+    padding-right: 30px;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
-.home-header{
+.home-header {
     color: base.$darkBlue;
-    font-size: 8vw;
+    font-size: 7vw;
     margin-bottom: 20px;
     font-family: base.$font-family-header;
-
 }
-.home-title-large{
-    font-size: 4vw;
+.home-title-large {
+    font-size: 3.5vw;
     width: 90%;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: base.$font-family-header
-    
+    font-family: base.$font-family-header;
 }
-.home-title-small{
+.home-title-small {
     font-size: 1.3vw;
     width: 90%;
     display: flex;
@@ -34,57 +32,52 @@
     font-family: base.$font-family-header-text;
     margin-bottom: 6vw;
 }
-.home-logo{
+.home-logo {
     width: 35%;
     height: 50%;
-    
 }
-.home-button{
+.home-button {
     display: flex;
     flex-direction: row;
     width: 90%;
     justify-content: space-around;
-    
+    .link {
+        width: 70%;
+        text-decoration: none;
+    }
 }
-@media screen and (max-width:600px) {
-    .home{
+@media screen and (max-width: 600px) {
+    .home {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
     }
-    .home-logo{
+    .home-logo {
         // width: 70%;
         // height: 60%;
         // margin-top:40px;
         // min-width: 200px;
         // min-height: 140px;
         display: none;
-
-        
     }
-    .home-content{
+    .home-content {
         margin-left: 30px;
         height: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-
     }
-    .home-title-large{
+    .home-title-large {
         font-size: 6vw;
     }
-    .home-header{
+    .home-header {
         font-size: 11vw;
     }
-    .home-title-small{
+    .home-title-small {
         font-size: 3vw;
     }
-    .home-button{
+    .home-button {
         width: 70%;
         column-gap: 20px;
     }
-    
 }

@@ -2,6 +2,7 @@ import "../../src/scss/Home.scss";
 import React from "react";
 import homeLogo from "../assets/homeLogo.png";
 import { Button } from "../components/Button";
+import { Link } from "react-router-dom";
 
 export const HomePage = () => {
     return (
@@ -17,8 +18,13 @@ export const HomePage = () => {
                     hassle-free home services with Homehive
                 </div>
                 <div className="home-button">
-                    <Button buttonText={"Sign Up"} />
-                    <Button buttonText={"Login"} />
+                    <Link to="sign-up" className="link">
+                        <Button buttonText={"Sign Up"} />
+                    </Link>
+
+                    <Link to="login" className="link">
+                        <Button buttonText={"Login"} />
+                    </Link>
                 </div>
             </div>
             <img alt="home-logo" src={homeLogo} className="home-logo" />

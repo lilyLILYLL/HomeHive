@@ -1,40 +1,36 @@
-@use 'base';
-.headbar{
+@use "base";
+.headbar {
     background-color: base.$darkBlue;
     width: 100vw;
     height: 65px;
     display: flex;
-    position: fixed;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    
-
+    position: fixed;
 }
-.headbar-logo{
-    width:100px;
-    height:100%;
-    margin-left:10px;
-    margin-right:10px;
-
+.headbar-logo {
+    width: 100px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.headbar-content{
+.headbar-content {
     display: flex;
     align-items: center;
-    flex:1;
+    flex: 1;
     flex-wrap: wrap;
 }
 
-
-.headbar-link{
-    height:100%;
+.headbar-link {
+    height: 100%;
     font-size: 20px;
     color: base.$white;
     text-decoration: none;
     font-family: base.$font-family;
-    div{
-        height:100%;
+    div {
+        height: 100%;
         display: flex;
         align-items: center;
         padding-left: 2vw;
-        padding-right:2vw;
+        padding-right: 2vw;
     }
 }

@@ -1,0 +1,32 @@
+.aboutUs-page {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+    text-align: center;
+}
+.aboutUs-row-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+
+    img {
+        width: 40%;
+    }
+    p {
+        width: 40%;
+        letter-spacing: 1.8px;
+        font-size: 1.5vw;
+        line-height: 35px;
+    }
+}
+.aboutUs-benefits {
+    width: 40%;
+    p {
+        width: 100%;
+    }
+}

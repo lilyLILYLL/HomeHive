@@ -1,0 +1,31 @@
+@use "base";
+.professional-card {
+    background-color: base.$white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+
+    img {
+        width: 100px;
+        height: 70%;
+        border-radius: 15px;
+    }
+    p {
+        letter-spacing: 0.8px;
+        font-weight: bold;
+    }
+    .professional-info {
+        height: 80%;
+    }
+    .professional-rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+        width: 100%;
+    }
+}

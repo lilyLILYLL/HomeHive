@@ -1,22 +1,22 @@
-@use 'base';
+@use "base";
 
-.layout{
-
-  flex:1;
+.layout {
+    flex: 1;
     display: grid;
-    grid-template-areas: "header"
-                          "content";
+    grid-template-areas:
+        "header"
+        "content";
 
-    background-color:base.$backgroundColor;
-    grid-template: 30px 1fr/1fr;
- 
+    background-color: base.$backgroundColor;
+    grid-template: 70px 9fr /1fr;
 }
-.layout-header{
+.layout-header {
     grid-area: "header";
-
 }
-.layout-content{
+.layout-content {
     grid-area: "content";
     min-height: 100vh;
-    
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

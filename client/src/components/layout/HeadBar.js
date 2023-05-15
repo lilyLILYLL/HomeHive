@@ -1,9 +1,9 @@
 import "../../scss/Header.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import routes from "../../constants/routes";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 import colors from "../../constants/colors";
+import { routes } from "../../constants/routes";
 export const HeadBar = () => {
     return (
         <div className="headbar">

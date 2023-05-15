@@ -1,0 +1,46 @@
+@use "../base.scss";
+.professionals-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+}
+.professionals-page-description {
+    width: 60%;
+    align-self: center;
+    border: 1px solid black;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 20px;
+}
+.professional-name-input {
+    width: 80%;
+    align-self: center;
+    background-color: base.$white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    input {
+        width: 100%;
+        font-size: 16px;
+        border: none;
+        background-color: base.$white;
+        letter-spacing: 1px;
+    }
+    img {
+        width: 30px;
+    }
+}
+.professional-list {
+    margin-top: 50px;
+    column-gap: 5%;
+    width: 95%;
+    align-self: center;
+    columns: 300px 3;
+    justify-content: center;
+}

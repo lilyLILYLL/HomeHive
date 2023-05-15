@@ -1,0 +1,87 @@
+@use "base";
+
+.seperator-line {
+    height: 0.5px;
+    background-color: base.$black;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-image {
+    width: 50%;
+    height: 100%;
+    min-height: 150px;
+    min-width: 245px; // the minimum width is 286
+    align-self: center;
+    img {
+        width: 90%;
+        height: 100%;
+    }
+}
+.service-content {
+    font-family: base.$font-family;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+.service-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.service-description {
+    font-size: 1.1rem;
+    word-spacing: 2px;
+    line-height: 35px;
+
+    margin-bottom: 20px;
+}
+.service-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: base.$darkBlue;
+    font-size: 1rem;
+    padding: 10px;
+    max-width: 200px;
+    width: 30%;
+    color: base.$white;
+    border-radius: 20px;
+    min-width: 140px;
+    align-self: center;
+    margin-top: 20px;
+}
+.service-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .service {
+        flex-direction: column;
+
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .service-content {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .service-image {
+        width: 80%;
+    }
+    .service-content {
+        height: 50%;
+    }
+}
