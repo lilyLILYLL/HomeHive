@@ -14,6 +14,10 @@ import house_paiting from "../assets/painting/painting_one.png";
 import roof_paiting from "../assets/painting/roof_painting.png";
 import fencing_gate from "../assets/fence_installation/Fencing-installation.png";
 import fencing_repairs from "../assets/fence_installation/Fencing-Repair.png";
+import Carpentry from "../assets/handyman/Carpentry.png";
+import Electrical from "../assets/handyman/Electrical.png";
+import Plumbing from "../assets/handyman/Residential-Plumbing-Service.png";
+
 export const services = [
     {
         serviceField: "Lawn Maintenance",
@@ -148,6 +152,32 @@ export const availableServices = {
                 "Fences after a while will start to show damages. The one which needs repairs can be done by Homehive professionals.",
             fee: 50,
             image: fencing_repairs,
+        },
+    ],
+    HANDYMAN: [
+        {
+            link: "",
+            serviceField: "Carpentry Services",
+            description:
+                "We do any type of fencing and gate installation such as timber fencing, colorbond fencing, traditional fencing and many more. Just let us know what type you want and provide the materials needed rest will be taken care by the Homehive professionals.",
+            fee: 58,
+            image: Carpentry,
+        },
+        {
+            link: "",
+            serviceField: "Plumbing Services",
+            description:
+                "Fences after a while will start to show damages. The one which needs repairs can be done by Homehive professionals.",
+            fee: 58,
+            image: Plumbing,
+        },
+        {
+            link: "",
+            serviceField: "Electrical Services",
+            description:
+                "Fences after a while will start to show damages. The one which needs repairs can be done by Homehive professionals.",
+            fee: 58,
+            image: Electrical,
         },
     ],
 };

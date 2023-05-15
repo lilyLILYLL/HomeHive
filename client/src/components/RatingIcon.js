@@ -7,13 +7,15 @@ export const RatingIcon = ({ star }) => {
         <div className="rating-icon">
             {Array(star)
                 .fill(0)
-                .map((index) => {
-                    return <AiFillStar className="icon" />;
+                .map((item, index) => {
+                    return <AiFillStar className="icon" key={index} />;
                 })}
             {Array(5 - star)
                 .fill(0)
-                .map((index) => {
-                    return <AiFillStar className="icon-outline" />;
+                .map((item, index) => {
+                    return (
+                        <AiFillStar className="icon-outline" key={5 - index} />
+                    );
                 })}
         </div>
     );

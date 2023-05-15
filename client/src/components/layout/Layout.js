@@ -15,7 +15,7 @@ import { ServicePestControlPage } from "../../pages/services/ServicePestControlP
 import { ServiceLawnMaintenancePage } from "../../pages/services/ServiceLawnMaintenancePage";
 import { LoginPage } from "../../pages/authentication/LoginPage";
 import { SignUpPage } from "../../pages/authentication/SignUpPage";
-
+import { ProfessionalReviewPage } from "../../pages/ProfessionalReviewPage";
 export const Layout = () => {
     return (
         // <BrowserRouter>
@@ -54,10 +54,13 @@ export const Layout = () => {
                     </Route>
                     <Route path="aboutUs" element={<AboutUsPage />} />
                     <Route path="contact" element={<ContactPage />} />
-                    <Route
-                        path="professionals"
-                        element={<ProfessionalsPage />}
-                    />
+                    <Route path="professionals">
+                        <Route index element={<ProfessionalsPage />} />
+                        <Route
+                            path=":id"
+                            element={<ProfessionalReviewPage />}
+                        />
+                    </Route>
                 </Routes>
             </div>
         </div>

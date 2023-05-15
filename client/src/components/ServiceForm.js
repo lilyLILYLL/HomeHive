@@ -16,6 +16,11 @@ export const ServiceForm = ({ service, index }) => {
                     <div className="service-description">
                         {service.description}
                     </div>
+                    {service.fee && (
+                        <div style={{ fontSize: "25px" }}>
+                            COST : ${service.fee} / hour
+                        </div>
+                    )}
                     <div className="service-button">
                         <Link
                             to={service.link}

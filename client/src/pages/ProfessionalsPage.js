@@ -8,6 +8,7 @@ import { professionals } from "../data/professionals";
 export const ProfessionalsPage = () => {
     const [professionalName, setProfessionalName] = useState("");
     const [professionalList, setProfessionalList] = useState(professionals);
+
     const handleOnChangeText = (event) => {
         setProfessionalName(event.target.value);
     };
@@ -23,6 +24,7 @@ export const ProfessionalsPage = () => {
                     .includes(professionalName.toLowerCase())
         );
     };
+
     useEffect(() => {
         setProfessionalList(filterByProfessionalName());
     }, [professionalName]);
@@ -31,8 +33,10 @@ export const ProfessionalsPage = () => {
     const handleOnClick = () => {
         inputRef?.current?.focus();
     };
+
+    const showReviewPage = () => {};
     return (
-        <div>
+        <div onClick={showReviewPage}>
             <PageTitlte title={"Professionals"} />
             <div className="professionals-page">
                 <div className="professionals-page-description">
@@ -48,7 +52,6 @@ export const ProfessionalsPage = () => {
                         type="text"
                         placeholder="Enter Professional Name"
                         ref={inputRef}
-                        value={professionalName}
                         onChange={handleOnChangeText}
                     />
 

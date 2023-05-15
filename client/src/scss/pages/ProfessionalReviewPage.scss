@@ -1,0 +1,25 @@
+.professional-review-page {
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.professional-review-info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 30%;
+        height: 20%;
+        border-radius: 30px;
+        max-width: 300px;
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
+.professional-info-content {
+    font-size: 3vw;
+    letter-spacing: 0.5px;
+}

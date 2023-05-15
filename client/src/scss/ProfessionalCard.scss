@@ -8,13 +8,15 @@
     flex-direction: row;
     column-gap: 20px;
     align-items: center;
-
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
     img {
         width: 100px;
         height: 70%;
         border-radius: 15px;
     }
-    p {
+    div {
         letter-spacing: 0.8px;
         font-weight: bold;
     }
@@ -28,4 +30,7 @@
         column-gap: 20px;
         width: 100%;
     }
+}
+.professional-card:hover {
+    cursor: pointer;
 }
