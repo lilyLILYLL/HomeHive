@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/ProfessionalCard.scss";
-import dummy_user from "../assets/dummy.jpeg";
+import dummy_user from "../assets/dummy.png";
 import { RatingIcon } from "./RatingIcon";
 import { useNavigate } from "react-router-dom";
 

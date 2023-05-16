@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/pages/SuccessPage.scss";
-import dummy_avatar from "../assets/dummy.jpeg";
+import dummy_avatar from "../assets/dummy.png";
 import { RatingIcon } from "../components/RatingIcon";
 export const SuccessPage = () => {
     return (

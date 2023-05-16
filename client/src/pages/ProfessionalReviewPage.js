@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
-import dummy_avatar from "../assets/dummy.jpeg";
+import dummy_avatar from "../assets/dummy.png";
 import "../scss/pages/ProfessionalReviewPage.scss";
 import { ReviewsBoard } from "../components/ReviewsBoard";
 
