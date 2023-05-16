@@ -1,0 +1,34 @@
+.book-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 90%;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    .book-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        .label {
+            width: 250px;
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        input,
+        option,
+        select {
+            width: 40%;
+            height: 25px;
+        }
+        .textarea {
+            width: 40%;
+            height: 70px;
+        }
+    }
+    .book-button {
+        margin-top: 50px;
+    }
+}

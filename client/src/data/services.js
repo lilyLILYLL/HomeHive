@@ -181,3 +181,11 @@ export const availableServices = {
         },
     ],
 };
+
+export const serviceOptions = [
+    "Lawn Maintenance",
+    "HandyMan",
+    "Painting",
+    "Pest Control",
+    "Air Conditioning and Heater Repairs",
+];

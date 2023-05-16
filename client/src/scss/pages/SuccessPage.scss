@@ -1,0 +1,45 @@
+@use "../base.scss";
+.success-page {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    row-gap: 60px;
+    padding-top: 40px;
+}
+.app-name {
+    color: base.$darkBlue;
+    font-size: 80px;
+    font-weight: bold;
+}
+.thankyou-section {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-style: italic;
+}
+.information {
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    align-items: center;
+
+    img {
+        width: 300px;
+        height: 200px;
+        border-radius: 50px;
+    }
+    .name,
+    .rating {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .rating {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,20 @@
+.input-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    .label {
+        width: 250px;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    input {
+        width: 40%;
+        height: 25px;
+    }
+    .textarea {
+        width: 40%;
+        height: 70px;
+    }
+}

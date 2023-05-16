@@ -16,6 +16,8 @@ import { ServiceLawnMaintenancePage } from "../../pages/services/ServiceLawnMain
 import { LoginPage } from "../../pages/authentication/LoginPage";
 import { SignUpPage } from "../../pages/authentication/SignUpPage";
 import { ProfessionalReviewPage } from "../../pages/ProfessionalReviewPage";
+import { BookServicePage } from "../../pages/BookServicePage";
+import { SuccessPage } from "../../pages/SuccessPage";
 export const Layout = () => {
     return (
         // <BrowserRouter>
@@ -51,6 +53,10 @@ export const Layout = () => {
                             path="pest-control"
                             element={<ServicePestControlPage />}
                         />
+                        <Route path="book-service">
+                            <Route index element={<BookServicePage />} />
+                            <Route path="success" element={<SuccessPage />} />
+                        </Route>
                     </Route>
                     <Route path="aboutUs" element={<AboutUsPage />} />
                     <Route path="contact" element={<ContactPage />} />

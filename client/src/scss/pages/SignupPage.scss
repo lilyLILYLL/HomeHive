@@ -1,0 +1,21 @@
+.sign-up-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    .sign-up-option {
+        display: flex;
+        flex-direction: row;
+        column-gap: 90px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .sign-up-title {
+        font-size: 40px;
+        font-style: italic;
+    }
+    .sign-up-title:hover {
+        cursor: pointer;
+    }
+}

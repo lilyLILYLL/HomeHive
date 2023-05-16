@@ -1,9 +1,16 @@
 import "../scss/ServicesForm.scss";
 import React from "react";
-import { Link } from "react-router-dom";
-import colors from "../constants/colors";
+import { useNavigate } from "react-router-dom";
 
 export const ServiceForm = ({ service, index }) => {
+    const navigate = useNavigate();
+    const handleOnClick = () => {
+        if (service.link) {
+            navigate(`/services/${service.link}`);
+        } else {
+            navigate("/services/book-service");
+        }
+    };
     return (
         <div>
             <div className={index % 2 === 0 ? "service" : "service reverse"}>
@@ -21,16 +28,8 @@ export const ServiceForm = ({ service, index }) => {
                             COST : ${service.fee} / hour
                         </div>
                     )}
-                    <div className="service-button">
-                        <Link
-                            to={service.link}
-                            style={{
-                                textDecoration: "none",
-                                color: colors.white,
-                            }}
-                        >
-                            More Details
-                        </Link>
+                    <div className="service-button" onClick={handleOnClick}>
+                        {service.fee ? "Book Now" : "More Details"}
                     </div>
                 </div>
             </div>

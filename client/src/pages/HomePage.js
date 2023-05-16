@@ -14,7 +14,7 @@ export const HomePage = () => {
                     Connect with local tradie's for hassle-free home services
                 </div>
                 <div className="home-title-small">
-                    Say goodbye to unrelible tradepeople and hello to
+                    Say goodbye to unrelible tradespeople and hello to
                     hassle-free home services with Homehive
                 </div>
                 <div className="home-button">
