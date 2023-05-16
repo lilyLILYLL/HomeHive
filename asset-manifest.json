@@ -1,21 +1,42 @@
 {
   "files": {
-    "main.css": "./static/css/main.1a9aabbc.css",
-    "main.js": "./static/js/main.402ea113.js",
+    "main.css": "./static/css/main.04becafc.css",
+    "main.js": "./static/js/main.e792d0ed.js",
+    "static/media/pic1.png": "./static/media/pic1.dd6b40a539994d1e7e8c.png",
+    "static/media/lawn_mowing.png": "./static/media/lawn_mowing.508a582c82627c74503f.png",
+    "static/media/Fencing-installation.png": "./static/media/Fencing-installation.c1d7136f8026198dea2f.png",
+    "static/media/lawn_hedging.png": "./static/media/lawn_hedging.21a7fca0d7bfd174cb66.png",
+    "static/media/pic2.png": "./static/media/pic2.d3b810e44709f61bf5f9.png",
+    "static/media/garden_care.png": "./static/media/garden_care.640d6badb6092a1a6739.png",
+    "static/media/Carpentry.png": "./static/media/Carpentry.3123e5e925e2c95e2d53.png",
+    "static/media/Fencing-Repair.png": "./static/media/Fencing-Repair.2e8846c9bbb1a21b7283.png",
+    "static/media/roof_painting.png": "./static/media/roof_painting.5f4167ca08ac5be454e1.png",
+    "static/media/pic3.png": "./static/media/pic3.ca7ba8ea422f66bce437.png",
+    "static/media/Residential-Plumbing-Service.png": "./static/media/Residential-Plumbing-Service.4d30ab1a39a6fa053b11.png",
+    "static/media/Electrical.png": "./static/media/Electrical.c3e024b071741bc296bc.png",
+    "static/media/painting_one.png": "./static/media/painting_one.71bc34a478f33b7e2351.png",
+    "static/media/Air-Servicing.png": "./static/media/Air-Servicing.2090fdc103d81be47de4.png",
     "static/media/homeLogo.png": "./static/media/homeLogo.88235e7951b467b42dd0.png",
+    "static/media/AC_repair.png": "./static/media/AC_repair.20cde688dce5d745f07d.png",
+    "static/media/AC_three.png": "./static/media/AC_three.e912adfbf78252bb7e9d.png",
     "static/media/lawn_maintenance.jpeg": "./static/media/lawn_maintenance.f48db211e157f5e87fa2.jpeg",
     "static/media/pest.jpeg": "./static/media/pest.e01db45c6e35d4df3bcf.jpeg",
+    "static/media/opossum.png": "./static/media/opossum.af2af37b5e9ce320ca71.png",
     "static/media/handyman.jpeg": "./static/media/handyman.d22e10682bb270955c9b.jpeg",
     "static/media/Fence.jpeg": "./static/media/Fence.81f931dcc455ffb8b981.jpeg",
     "static/media/wallpainter.jpeg": "./static/media/wallpainter.e703a8bc935dcbe1eb23.jpeg",
+    "static/media/cockroach.png": "./static/media/cockroach.3fc9a157ee2d53f2d281.png",
+    "static/media/spider.png": "./static/media/spider.eef127ed63007eca8419.png",
     "static/media/AC.jpeg": "./static/media/AC.157a5e5147536e10549d.jpeg",
-    "static/media/logo.svg": "./static/media/logo.ce123efd0a9230e4e474f5eb87abc607.svg",
+    "static/media/dummy.png": "./static/media/dummy.1b9cdf073abd66536c4d.png",
+    "static/media/termite.png": "./static/media/termite.d9f6e86bb8c8dfa8309a.png",
+    "static/media/mouse-rat.png": "./static/media/mouse-rat.6339890ea8781193de70.png",
     "index.html": "./index.html",
-    "main.1a9aabbc.css.map": "./static/css/main.1a9aabbc.css.map",
-    "main.402ea113.js.map": "./static/js/main.402ea113.js.map"
+    "main.04becafc.css.map": "./static/css/main.04becafc.css.map",
+    "main.e792d0ed.js.map": "./static/js/main.e792d0ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a9aabbc.css",
-    "static/js/main.402ea113.js"
+    "static/css/main.04becafc.css",
+    "static/js/main.e792d0ed.js"
   ]
 }
