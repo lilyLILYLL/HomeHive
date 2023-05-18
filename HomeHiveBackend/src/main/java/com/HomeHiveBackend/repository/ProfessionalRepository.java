@@ -1,10 +1,11 @@
-package main.java.com.HomeHiveBackend.repository;
+package com.HomeHiveBackend.repository;
 
-import main.java.com.HomeHiveBackend.model.Professional;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.HomeHiveBackend.model.Professional;
 
 /**
  * Repository for Professional
  */
-public interface ProfessionalRepository extends JpaRepository<Paper, Long> {
+public interface ProfessionalRepository extends JpaRepository<Professional, Long> {
 }
