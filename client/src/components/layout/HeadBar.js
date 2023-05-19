@@ -1,14 +1,15 @@
 import "../../scss/Header.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+
 import colors from "../../constants/colors";
 import { routes } from "../../constants/routes";
+import images from "../../assets/images";
 export const HeadBar = () => {
     return (
         <div className="headbar">
             <NavLink to="/">
-                <img alt="Logo" src={logo} className="headbar-logo" />
+                <img alt="Logo" src={images.logo} className="headbar-logo" />
             </NavLink>
 
             {routes &&

@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../scss/pages/ProfessionalsPage.scss";
 import { PageTitlte } from "../components/PageTitlte";
-import user_search from "../assets/user_search.png";
+import images from "../assets/images";
 import { ProfessionalCard } from "../components/ProfessionalCard";
 import { professionals } from "../data/professionals";
 
@@ -55,7 +55,7 @@ export const ProfessionalsPage = () => {
                         onChange={handleOnChangeText}
                     />
 
-                    <img src={user_search} alt="Seacrh" />
+                    <img src={images.user_search} alt="Seacrh" />
                 </div>
 
                 <div className="professional-list">

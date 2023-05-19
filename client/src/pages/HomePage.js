@@ -1,6 +1,6 @@
 import "../../src/scss/Home.scss";
 import React from "react";
-import homeLogo from "../assets/homeLogo.png";
+import images from "../assets/images";
 import { Button } from "../components/Button";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ export const HomePage = () => {
                     </Link>
                 </div>
             </div>
-            <img alt="home-logo" src={homeLogo} className="home-logo" />
+            <img alt="home-logo" src={images.home_logo} className="home-logo" />
         </div>
     );
 };

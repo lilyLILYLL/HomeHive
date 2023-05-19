@@ -5,7 +5,7 @@ import { ServiceForm } from "../../components/ServiceForm";
 import { PageTitlte } from "../../components/PageTitlte";
 export const ServicesPage = () => {
     return (
-        <div>
+        <div >
             <PageTitlte title="Services" />
             {services &&
                 services.map((service, index) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/pages/SuccessPage.scss";
-import dummy_avatar from "../assets/dummy.png";
+import images from "../assets/images";
 import { RatingIcon } from "../components/RatingIcon";
 export const SuccessPage = () => {
     return (
@@ -12,7 +12,7 @@ export const SuccessPage = () => {
                 have a great day.
             </div>
             <div className="information">
-                <img src={dummy_avatar} alt="Dummy" />
+                <img src={images.dummy_avatar} alt="Dummy" />
                 <div>
                     <div className="name">Name:</div>
                     <div className="rating">

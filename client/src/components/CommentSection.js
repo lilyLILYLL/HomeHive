@@ -1,11 +1,11 @@
 import React from "react";
-import dummy_avatar from "../assets/dummy_avatar.jpeg";
 import { RatingIcon } from "../components/RatingIcon";
+import images from "../assets/images";
 
 export const CommentSection = ({ item }) => {
     return (
         <div className="comment-section">
-            <img src={dummy_avatar} alt="Dummy Avatar" />
+            <img src={images.dummy_avatar} alt="Dummy Avatar" />
             <div>
                 <div className="comment-username">{item.username}</div>
                 <div className="comment-star-date-time">

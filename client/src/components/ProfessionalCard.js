@@ -1,9 +1,8 @@
 import React from "react";
 import "../scss/ProfessionalCard.scss";
-import dummy_user from "../assets/dummy.png";
 import { RatingIcon } from "./RatingIcon";
 import { useNavigate } from "react-router-dom";
-
+import images from "../assets/images";
 export const ProfessionalCard = ({ professional }) => {
     const navigate = useNavigate();
 
@@ -15,7 +14,7 @@ export const ProfessionalCard = ({ professional }) => {
 
     return (
         <div className="professional-card" onClick={goToReviewPage}>
-            <img src={dummy_user} alt="Dummy" />
+            <img src={images.professional_avatar} alt="Dummy" />
             <div className="professional-info">
                 <div>Name : {professional.name}</div>
                 <div className="professional-rating">

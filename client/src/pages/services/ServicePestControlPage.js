@@ -1,10 +1,6 @@
 import React from "react";
 import "../../scss/ServicePestControlPage.scss";
-import cockroach from "../../assets/pest_control/cockroach.png";
-import mouse_rat from "../../assets/pest_control/mouse-rat.png";
-import opossum from "../../assets/pest_control/opossum.png";
-import spider from "../../assets/pest_control/spider.png";
-import termite from "../../assets/pest_control/termite.png";
+import images from "../../assets/images";
 
 export const ServicePestControlPage = () => {
     return (
@@ -23,23 +19,23 @@ export const ServicePestControlPage = () => {
             </div>
             <div className="pest-control-images">
                 <div>
-                    <img src={cockroach} alt="cockroach" />
+                    <img src={images.pest_pic1} alt="cockroach" />
                     <h3>Cockroach</h3>
                 </div>
                 <div>
-                    <img src={spider} alt="spider" />
+                    <img src={images.pest_pic2} alt="spider" />
                     <h3>Spider</h3>
                 </div>
                 <div>
-                    <img src={mouse_rat} alt="mouse_rate" />
+                    <img src={images.pest_pic3} alt="mouse_rate" />
                     <h3>Rats and Mices</h3>
                 </div>
                 <div>
-                    <img src={opossum} alt="opossum" />
+                    <img src={images.pest_pic4} alt="opossum" />
                     <h3>Possum</h3>
                 </div>
                 <div>
-                    <img src={termite} alt="termite" />
+                    <img src={images.pest_pic5} alt="termite" />
                     <h3>Termite</h3>
                 </div>
             </div>

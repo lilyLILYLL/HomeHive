@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
-import dummy_avatar from "../assets/dummy.png";
+import images from "../assets/images";
 import "../scss/pages/ProfessionalReviewPage.scss";
 import { ReviewsBoard } from "../components/ReviewsBoard";
 
@@ -10,7 +10,7 @@ export const ProfessionalReviewPage = () => {
     return (
         <div className="professional-review-page">
             <div className="professional-review-info">
-                <img src={dummy_avatar} alt="Dummy Avatar" />
+                <img src={images.professional_avatar} alt="Dummy Avatar" />
                 <div className="professional-info-content">
                     <p>{state.name}</p>
                     <p>{state.service}</p>

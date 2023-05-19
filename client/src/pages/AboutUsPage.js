@@ -1,8 +1,6 @@
 import React from "react";
 import "../scss/pages/AboutUsPage.scss";
-import pic1 from "../assets/aboutUsPage/pic1.png";
-import pic2 from "../assets/aboutUsPage/pic2.png";
-import pic3 from "../assets/aboutUsPage/pic3.png";
+import images from "../assets/images";
 import { PageTitlte } from "../components/PageTitlte";
 export const AboutUsPage = () => {
     return (
@@ -39,7 +37,7 @@ export const AboutUsPage = () => {
             </div>
 
             <div className="aboutUs-question-section">
-                <img src={pic2} />
+                <img src={images.aboutUs_pic1} />
                 <div className="aboutUs-question">
                     <div className="question">
                         How is a customer provided with a professional?
@@ -67,7 +65,7 @@ export const AboutUsPage = () => {
                         provide reviews of the experts' work.
                     </div>
                 </div>
-                <img src={pic3} />
+                <img src={images.aboutUs_pic2} />
             </div>
         </div>
     );
