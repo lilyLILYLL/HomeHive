@@ -1,10 +1,11 @@
-package main.java.com.HomeHiveBackend.repository;
+package com.HomeHiveBackend.repository;
 
-import main.java.com.HomeHiveBackend.model.Report;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.HomeHiveBackend.model.Report;
 
 /**
  * Repository for Report
  */
-public interface ReportRepository extends JpaRepository<Paper, Long> {
+public interface ReportRepository extends JpaRepository<Report, Long> {
 }

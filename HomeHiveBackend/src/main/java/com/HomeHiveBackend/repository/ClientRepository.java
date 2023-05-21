@@ -1,10 +1,12 @@
-package main.java.com.HomeHiveBackend.repository;
+package com.HomeHiveBackend.repository;
 
-import main.java.com.HomeHiveBackend.model.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.HomeHiveBackend.model.Client;
 
 /**
  * Repository for Client
  */
-public interface ClientRepository extends JpaRepository<Paper, Long> {
+public interface ClientRepository extends JpaRepository<Client, Long> {
+	
 }
