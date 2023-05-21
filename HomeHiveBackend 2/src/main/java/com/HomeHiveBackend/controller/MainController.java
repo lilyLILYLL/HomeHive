@@ -47,11 +47,13 @@ public class MainController {
 	@Autowired
 	TransactionRepository transactionRepository;
 	
+	@CrossOrigin
 	@GetMapping("/")
 	public ResponseEntity<String> greet() {
 		return new ResponseEntity<String>("App Up!!", HttpStatus.OK);
 	}	
 	
+	@CrossOrigin
 	@PostMapping("/addClient")
 	public void addClient(@RequestBody Client client) {
 		System.out.println("client: " + client.toString());
@@ -60,11 +62,13 @@ public class MainController {
 		
 	}
 	
+	@CrossOrigin
 	@PostMapping("/addProfessional")
 	public void addProfessional(@RequestBody Professional professional) {
 		professionalRepository.saveAndFlush(professional);
 	}
 	
+	@CrossOrigin
 	@GetMapping({ "/txn/{id}", "/client/{id}/txn" })
 	  public ResponseEntity<Transaction> getClientByTxnId(@PathVariable(value = "id") Long id) {
 	    Transaction transaction = transactionRepository.findByClientId(id)
@@ -73,6 +77,7 @@ public class MainController {
 	    return new ResponseEntity<>(transaction, HttpStatus.OK);
 	  }
 	
+	@CrossOrigin
 	@GetMapping({ "/review/{id}", "/client/{id}/review" })
 	  public ResponseEntity<Review> getClientByReviewId(@PathVariable(value = "id") Long id) {
 		Review review = reviewRepository.findByClientId(id)
@@ -81,6 +86,7 @@ public class MainController {
 	    return new ResponseEntity<>(review, HttpStatus.OK);
 	  }
 	
+	@CrossOrigin
 	@GetMapping({ "/sr/{id}", "/client/{id}/sr" })
 	  public ResponseEntity<ServiceRequest> getClientByServiceId(@PathVariable(value = "id") Long id) {
 		ServiceRequest serviceRequest = serviceRequestRepository.findByClientId(id)
@@ -89,6 +95,7 @@ public class MainController {
 	    return new ResponseEntity<>(serviceRequest, HttpStatus.OK);
 	  }
 	
+	@CrossOrigin
 	@GetMapping({ "/sr/all" })
 	  public ResponseEntity<List<ServiceRequest>> getAllServiceRequest(@RequestParam(required = false) String status) {
 		if(status != null)
@@ -97,6 +104,7 @@ public class MainController {
 		return new ResponseEntity<List<ServiceRequest>>(serviceRequestRepository.findAll(), HttpStatus.OK);
 	  }
 
+	@CrossOrigin
 	@PostMapping("/addServiceRequest/{id}/client")
 	public void addServiceRequest(@RequestBody ServiceRequest serviceRequest, @PathVariable Long id) {	
 		Client client = clientRepository.findById(id)
@@ -108,6 +116,7 @@ public class MainController {
         serviceRequestRepository.save(serviceRequest);
 	}
 	
+	@CrossOrigin
 	@PostMapping("/addTransaction/{id}/client")
 	public void addTransaction(@RequestBody Transaction transaction, @PathVariable Long id) {
 		Client client = clientRepository.findById(id)
@@ -117,6 +126,7 @@ public class MainController {
         transactionRepository.save(transaction);
 	}
 	
+	@CrossOrigin
 	@PostMapping("/addReview/{id}/client")
 	public void addReview(@RequestBody Review review, @PathVariable Long id) {
 		Client client = clientRepository.findById(id)
@@ -126,6 +136,7 @@ public class MainController {
 		reviewRepository.saveAndFlush(review);
 	}
 	
+	@CrossOrigin
 	@PutMapping("/updateServiceStatus")
 	public void updateServiceStatus(@RequestParam String status, @RequestParam Long serviceRequestId) 
 			throws Exception {
@@ -138,6 +149,7 @@ public class MainController {
 		serviceRequestRepository.saveAndFlush(serviceRequest);
 	}
 	
+	@CrossOrigin
 	@PutMapping("/updateComment")
 	public void updateComment(@RequestParam String comment, @RequestParam Long reviewId) throws Exception {
 		Review review = reviewRepository.getReferenceById(reviewId);
@@ -149,6 +161,7 @@ public class MainController {
 		reviewRepository.saveAndFlush(review);
 	}
 	
+	@CrossOrigin
 	@PutMapping("/updateRating")
 	public void updateRating(@RequestParam int rating, @RequestParam Long reviewId) throws Exception {
 		Review review = reviewRepository.getReferenceById(reviewId);
@@ -160,6 +173,7 @@ public class MainController {
 		reviewRepository.saveAndFlush(review);
 	}
 	
+	@CrossOrigin
 	@PutMapping("/updateTransactionStatus")
 	public void updateTransactionStatus(@RequestParam String transactionStatus, @RequestParam Long transactionId) 
 			throws Exception {
@@ -172,6 +186,7 @@ public class MainController {
 		transactionRepository.saveAndFlush(transaction);
 	}
 	
+	@CrossOrigin
 	@DeleteMapping("/deleteComment")
 	public void deleteComment(@RequestParam Long reviewId) throws Exception {
 		Review review = reviewRepository.getReferenceById(reviewId);
