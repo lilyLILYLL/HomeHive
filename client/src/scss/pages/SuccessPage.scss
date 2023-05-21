@@ -17,6 +17,16 @@
     letter-spacing: 1px;
     line-height: 40px;
     font-style: italic;
+    .login-link {
+        color: base.$darkBlue;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .login-link:hover {
+        cursor: pointer;
+    }
 }
 .information {
     width: 80%;
