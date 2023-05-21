@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/HomeHive/static/css/main.04becafc.css",
-    "main.js": "/HomeHive/static/js/main.b428b88b.js",
+    "main.js": "/HomeHive/static/js/main.00c49214.js",
     "index.html": "/HomeHive/index.html",
     "main.04becafc.css.map": "/HomeHive/static/css/main.04becafc.css.map",
-    "main.b428b88b.js.map": "/HomeHive/static/js/main.b428b88b.js.map"
+    "main.00c49214.js.map": "/HomeHive/static/js/main.00c49214.js.map"
   },
   "entrypoints": [
     "static/css/main.04becafc.css",
-    "static/js/main.b428b88b.js"
+    "static/js/main.00c49214.js"
   ]
 }
