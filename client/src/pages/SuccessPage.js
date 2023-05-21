@@ -2,7 +2,9 @@ import React from "react";
 import "../scss/pages/SuccessPage.scss";
 import images from "../assets/images";
 import { RatingIcon } from "../components/RatingIcon";
+import { useLocation } from "react-router-dom";
 export const SuccessPage = () => {
+    const location = useLocation();
     return (
         <div className="success-page">
             <div className="app-name">Home Hive</div>
@@ -12,9 +14,9 @@ export const SuccessPage = () => {
                 have a great day.
             </div>
             <div className="information">
-                <img src={images.dummy_avatar} alt="Dummy" />
+                <img src={images.professional_avatar} alt="Dummy" />
                 <div>
-                    <div className="name">Name:</div>
+                    <div className="name">Name: {location.state}</div>
                     <div className="rating">
                         <div> Rating:</div>
                         <RatingIcon star={4} />

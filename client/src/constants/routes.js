@@ -4,6 +4,7 @@ import { HomePage } from "../pages/HomePage";
 
 import { ServicesPage } from "../pages/services/ServicesPage";
 import { ProfessionalsPage } from "../pages/ProfessionalsPage";
+import { PaymentPage } from "../pages/PaymentPage";
 
 export const routes = [
     {
@@ -31,5 +32,10 @@ export const routes = [
         path: "professionals",
         element: <ProfessionalsPage />,
         label: "Professionals",
+    },
+    {
+        path: "payment",
+        element: <PaymentPage />,
+        label: "Payment",
     },
 ];

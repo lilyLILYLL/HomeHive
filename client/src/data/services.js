@@ -164,9 +164,38 @@ export const availableServices = {
 };
 
 export const serviceOptions = [
-    "Lawn Maintenance",
-    "HandyMan",
-    "Painting",
-    "Pest Control",
-    "Air Conditioning and Heater Repairs",
+    {
+        main: "Lawn Maintenance",
+        children: ["Garden Care", "Lawn Mowing", "Hedging and Pruning"],
+        fee: 54,
+    },
+    {
+        main: "HandyMan",
+        children: [
+            "Carpentry Services",
+            "Plumbing Services",
+            "Electrical Services",
+        ],
+        fee: 58,
+    },
+    {
+        main: "Painting",
+        children: ["House Painting", "Roof Painting"],
+        fee: 35,
+    },
+    { main: "Pest Control", children: [], fee: 50 },
+    {
+        main: "Air Conditioning and Heater Repairs",
+        children: [
+            "Air Conditioning and Heater Repairs",
+            "Air Conditioning and Heater Installation",
+            "Air Conditioning and Heater Servicing",
+        ],
+        fee: 41,
+    },
+    {
+        main: "Fence Installation",
+        children: ["Fencing and Gate", "Fencing Repairs"],
+        fee: 50,
+    },
 ];

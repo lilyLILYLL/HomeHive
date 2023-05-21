@@ -47,10 +47,12 @@ public class MainController {
 	@Autowired
 	TransactionRepository transactionRepository;
 	
+	
 	@GetMapping("/")
 	public ResponseEntity<String> greet() {
 		return new ResponseEntity<String>("App Up!!", HttpStatus.OK);
 	}	
+	
 	
 	@PostMapping("/addClient")
 	public void addClient(@RequestBody Client client) {
@@ -60,10 +62,12 @@ public class MainController {
 		
 	}
 	
+	
 	@PostMapping("/addProfessional")
 	public void addProfessional(@RequestBody Professional professional) {
 		professionalRepository.saveAndFlush(professional);
 	}
+	
 	
 	@GetMapping({ "/txn/{id}", "/client/{id}/txn" })
 	  public ResponseEntity<Transaction> getClientByTxnId(@PathVariable(value = "id") Long id) {
@@ -73,6 +77,7 @@ public class MainController {
 	    return new ResponseEntity<>(transaction, HttpStatus.OK);
 	  }
 	
+	
 	@GetMapping({ "/review/{id}", "/client/{id}/review" })
 	  public ResponseEntity<Review> getClientByReviewId(@PathVariable(value = "id") Long id) {
 		Review review = reviewRepository.findByClientId(id)
@@ -80,6 +85,7 @@ public class MainController {
 
 	    return new ResponseEntity<>(review, HttpStatus.OK);
 	  }
+	
 	
 	@GetMapping({ "/sr/{id}", "/client/{id}/sr" })
 	  public ResponseEntity<ServiceRequest> getClientByServiceId(@PathVariable(value = "id") Long id) {
@@ -89,6 +95,7 @@ public class MainController {
 	    return new ResponseEntity<>(serviceRequest, HttpStatus.OK);
 	  }
 	
+	
 	@GetMapping({ "/sr/all" })
 	  public ResponseEntity<List<ServiceRequest>> getAllServiceRequest(@RequestParam(required = false) String status) {
 		if(status != null)
@@ -97,6 +104,7 @@ public class MainController {
 		return new ResponseEntity<List<ServiceRequest>>(serviceRequestRepository.findAll(), HttpStatus.OK);
 	  }
 
+	
 	@PostMapping("/addServiceRequest/{id}/client")
 	public void addServiceRequest(@RequestBody ServiceRequest serviceRequest, @PathVariable Long id) {	
 		Client client = clientRepository.findById(id)
@@ -108,6 +116,7 @@ public class MainController {
         serviceRequestRepository.save(serviceRequest);
 	}
 	
+	
 	@PostMapping("/addTransaction/{id}/client")
 	public void addTransaction(@RequestBody Transaction transaction, @PathVariable Long id) {
 		Client client = clientRepository.findById(id)
@@ -117,6 +126,7 @@ public class MainController {
         transactionRepository.save(transaction);
 	}
 	
+	
 	@PostMapping("/addReview/{id}/client")
 	public void addReview(@RequestBody Review review, @PathVariable Long id) {
 		Client client = clientRepository.findById(id)
@@ -125,6 +135,7 @@ public class MainController {
 		review.setClient(client);
 		reviewRepository.saveAndFlush(review);
 	}
+	
 	
 	@PutMapping("/updateServiceStatus")
 	public void updateServiceStatus(@RequestParam String status, @RequestParam Long serviceRequestId) 
@@ -138,6 +149,7 @@ public class MainController {
 		serviceRequestRepository.saveAndFlush(serviceRequest);
 	}
 	
+	
 	@PutMapping("/updateComment")
 	public void updateComment(@RequestParam String comment, @RequestParam Long reviewId) throws Exception {
 		Review review = reviewRepository.getReferenceById(reviewId);
@@ -148,6 +160,7 @@ public class MainController {
 		}
 		reviewRepository.saveAndFlush(review);
 	}
+	
 	
 	@PutMapping("/updateRating")
 	public void updateRating(@RequestParam int rating, @RequestParam Long reviewId) throws Exception {
@@ -160,6 +173,7 @@ public class MainController {
 		reviewRepository.saveAndFlush(review);
 	}
 	
+	
 	@PutMapping("/updateTransactionStatus")
 	public void updateTransactionStatus(@RequestParam String transactionStatus, @RequestParam Long transactionId) 
 			throws Exception {
@@ -171,6 +185,7 @@ public class MainController {
 		}
 		transactionRepository.saveAndFlush(transaction);
 	}
+	
 	
 	@DeleteMapping("/deleteComment")
 	public void deleteComment(@RequestParam Long reviewId) throws Exception {

@@ -9,6 +9,7 @@ import { InputForm } from "../components/InputForm";
 export const BookServicePage = () => {
     const [serviceOption, setServiceOption] = useState("");
     const [professionalList, setProfessionalList] = useState(professionals);
+    const [professional, setProfessional] = useState("Lawnson David");
 
     const navigate = useNavigate();
 
@@ -24,8 +25,14 @@ export const BookServicePage = () => {
     }, [serviceOption]);
 
     const handleBookFunction = () => {
-        navigate("/services/book-service/success");
+        navigate("/services/book-service/success", {
+            state: professional,
+        });
     };
+    const handleOption = (e) => {
+        setProfessional(e.target.value);
+    };
+    console.log(professional);
 
     return (
         <div className="book-service-page">
@@ -46,17 +53,43 @@ export const BookServicePage = () => {
                         </option>
                         {serviceOptions &&
                             serviceOptions.map((option, index) => {
-                                return (
-                                    <option key={index} value={option}>
-                                        {option}
-                                    </option>
-                                );
+                                if (option.children.length === 0) {
+                                    return (
+                                        <option key={index} value={option.main}>
+                                            {option.main}
+                                        </option>
+                                    );
+                                } else {
+                                    return (
+                                        <optgroup
+                                            label={option.main}
+                                            key={index}
+                                            style={{ fontSize: "30px" }}
+                                        >
+                                            {option.children &&
+                                                option.children.map(
+                                                    (item, index) => {
+                                                        return (
+                                                            <option
+                                                                value={
+                                                                    option.main
+                                                                }
+                                                                key={index}
+                                                            >
+                                                                {item}
+                                                            </option>
+                                                        );
+                                                    }
+                                                )}
+                                        </optgroup>
+                                    );
+                                }
                             })}
                     </select>
                 </div>
                 <div className="book-section">
                     <div className="label">Professional Name</div>
-                    <select name="" id="">
+                    <select name="" id="" onChange={handleOption}>
                         {professionalList &&
                             professionalList.map((item, index) => {
                                 return (

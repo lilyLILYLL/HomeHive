@@ -18,6 +18,7 @@ import { SignUpPage } from "../../pages/authentication/SignUpPage";
 import { ProfessionalReviewPage } from "../../pages/ProfessionalReviewPage";
 import { BookServicePage } from "../../pages/BookServicePage";
 import { SuccessPage } from "../../pages/SuccessPage";
+import { PaymentPage } from "../../pages/PaymentPage";
 export const Layout = () => {
     return (
         // <BrowserRouter>
@@ -67,6 +68,7 @@ export const Layout = () => {
                             element={<ProfessionalReviewPage />}
                         />
                     </Route>
+                    <Route path="payment" element={<PaymentPage />} />
                 </Routes>
             </div>
         </div>
