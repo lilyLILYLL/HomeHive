@@ -6,8 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * Reference Links :
@@ -25,14 +23,6 @@ public class OpenApiConfig {
                         .description("API Description")
                         .version("1.0")
                         .license(new License().name("Apache 2.0").url("http://www.apache.org/licenses/LICENSE-2.0")));
-    }
-
-
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("*")
-                .allowedMethods("*")
-                .allowedHeaders("*");
     }
 
 }

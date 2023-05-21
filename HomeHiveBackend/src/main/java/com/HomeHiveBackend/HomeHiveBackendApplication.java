@@ -9,7 +9,5 @@ public class HomeHiveBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HomeHiveBackendApplication.class, args);
 	}
-
-
 	
 }
