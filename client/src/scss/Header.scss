@@ -34,3 +34,15 @@
         padding-right: 2vw;
     }
 }
+.dummy_avatar {
+    width: 50px;
+    height: 70%;
+    align-self: center;
+    justify-self: flex-end;
+
+    margin-left: 25%;
+    border-radius: 50px;
+}
+.dummy_avatar:hover {
+    cursor: pointer;
+}
